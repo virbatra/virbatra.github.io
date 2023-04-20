@@ -8,10 +8,50 @@
         background-image: url("https://virbatra.github.io/Web%20page.png");
         background-size: cover;
         background-attachment: scroll;
+        margin: 0;
+        padding: 0;
+      }
+      .content {
+        height: 3000px; /* Adjust height as needed */
+        background-color: #ffffff; /* Set background color to contrast with image */
+      }
+      #back-to-top {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        font-size: 16px;
+        background-color: #333333;
+        color: #ffffff;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 10px 20px;
+        border-radius: 5px;
+      }
+      #back-to-top:hover {
+        background-color: #555555;
       }
     </style>
   </head>
   <body>
-    <!-- Your webpage content goes here -->
+    <div class="content">
+      <!-- Your webpage content goes here -->
+    </div>
+    <button id="back-to-top" onclick="topFunction()">Back to top</button>
+    <script>
+      var btn = document.getElementById("back-to-top");
+      window.onscroll = function() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          btn.style.display = "block";
+        } else {
+          btn.style.display = "none";
+        }
+      };
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
   </body>
 </html>
