@@ -70,6 +70,35 @@
     .band-website {
       margin-top: 20px;
     }
+    details > summary {
+    cursor: pointer;
+    padding: 10px;
+}
+
+details > summary h2 {
+    font-size: 18px; /* Adjust size as needed */
+    color: #333; /* Title color */
+    margin-bottom: 5px;
+}
+
+details > summary p {
+    font-size: 14px; /* Adjust size as needed */
+    color: #666; /* Subtitle color */
+    margin-top: 0;
+}
+
+details > summary::-webkit-details-marker {
+    display: none;
+}
+
+details[open] {
+    border: none;
+}
+
+.dropdown div, .dropdown ul {
+    padding: 10px;
+    margin: 5px 0;
+}
   </style>
 </head>
 <body>
@@ -152,44 +181,90 @@
         <p>Current GPA: 3.926 </p>
     </section>
 
-    <section id="experience">
-        <h2>Professional Experience</h2>
+        <section class="dropdown">
+    <details>
+        <summary>
+            <h2>Professional Experience</h2>
+            <p>Hands-on experience</p>
+        </summary>
         <div>
-            <h3>Founder and General Manager at Oz.</h3>
-            <p>Created a space for Drum and Bass music, managed logistics, and set up sound equipment.</p>
+            <h3>Founder and General Manager of Oz. (Underground Nightclub in Syracuse)</h3>
+            <p>Created a space for Drum and Bass music. Built a DJ booth and setup the sound and electrical equipment. Responsible for Logistics during and leading up to the events.</p>
+            <h3>Sound Engineer</h3>
+            <p>Part-time sound engineer in the Newhouse Studio</p>
+            <p>Freelance Sound engineering for events in Syracuse, as well as Oz.</p>
         </div>
+    </details>
+</section>
+
+
+    <section class="dropdown">
+    <details>
+        <summary>
+            <h2>Internships</h2>
+            <p>Expanding understanding and impact in the music industry.</p>
+        </summary>
         <div>
-            <h3>Internships</h3>
-            <ul>
-                <li>Venice Music: Partner Success Intern</li>
-                <li>Social Media Intern at Upforlessons Singapore</li>
-                <li>Audio Intern at Subcat Studios Syracuse</li>
-            </ul>
+            <h3>Venice Music: Partner Success Intern</h3>
+            <p>Executed tasks from research to data analysis, conducted A&R work, and explored key aspects of the music industry.</p>
+            <h3>Upforlessons Singapore: Social Media Intern</h3>
+            <p>Launched Social media presence for the company and helped create an image online by creating and posting content regularly.</p>
+            <h3>Subcat Studios Syracuse: Audio Intern</h3>
+            <p>Assisted in recording sessions and took part in engineering and admin work.</p>
         </div>
-    </section>
+    </details>
+</section>
 
-    <section id="artistry">
-        <h2>Artistry</h2>
-        <p>Lead Singer and Guitarist for Studio89, Songwriter, and Performer</p>
-    </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
+<section class="dropdown">
+    <details>
+        <summary>
+            <h2>Artistry</h2>
+            <p>Songwriter, Singer, and Guitarist</p>
+        </summary>
+        <div>
+            <h3>Studio89</h3>
+            <h4>Songwriter Lead Singer and Guitarist.</h4>
+            <p>Written and Released 3 songs and played over 40 shows in the Syracuse Area and outside.</p>
+            <h3>Picture Us Tiny</h3>
+            <h4>Lead Guitarist. </h4>
+            <p>Played numerous shows including in NYC. Co-wrote "Christmas On My Own" (1,000,000 Streams on Spotify).</p>
+        </div>
+    </details>
+</section>
+
+
+<section class="dropdown">
+    <details>
+        <summary>
+            <h2>Skills</h2>
+            <p>Technical and creative proficiencies across various tools and platforms.</p>
+        </summary>
         <ul>
             <li>Microsoft Excel</li>
             <li>Logic Pro X</li>
             <li>Protools</li>
-            <!-- Add more skills here -->
+            <li>Chartmetric</li>
+            <li>Adobe Suite (Illustrator, XD, Premiere Pro, InDesign, Aero)</li>
+            <li>Social Media Platforms (Instagram, TikTok)</li>
+            <li>Google Suite</li>
+            <li>Basic HTML</li>
         </ul>
-    </section>
+    </details>
+</section>
 
-    <section id="community-service">
-        <h2>Community Service</h2>
+<section class="dropdown">
+    <details>
+        <summary>
+            <h2>Community Service</h2>
+            <p>Volunteer Work and Leadership</p>
+        </summary>
         <p>English Tutor at Upper Street English School, Madrid</p>
         <p>Delivery Driver for Meals on Wheels, Singapore</p>
         <p>Kampuchea Balopp Global Concern Chair</p>
-    </section>
-    </body>
+    </details>
+</section>
+
 <section id="resume">
     <h2>My Resume</h2>
     <iframe src="https://virbatra.github.io/VirBatraResume13Oct.pdf" width="600" height="500"></iframe>
