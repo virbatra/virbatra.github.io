@@ -3,18 +3,16 @@
 <head>
   <title>Vir Batra</title>
   <style>
-
     body {
-      font-family: Arial, sans-serif, 
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #c7bad6,
     }
 
     .navbar {
-      background-color: #fcfbed;
+      background-color: #f2f2f2;
       overflow: hidden;
-      position: fixed;
+       position: fixed;
       top: 0;
       width: 100%;
     }
@@ -25,9 +23,7 @@
       padding: 14px 16px;
       text-decoration: none;
       font-weight: bold;
-      font-family: Arial, sans-serif;
-      font: Arial;
-      color: #7d5c65;
+      color: black;
     }
 
     .navbar a:hover {
@@ -36,45 +32,117 @@
 
     .intro {
       text-align: center;
-      margin-top: 100px;
-      font-size: 18px;
-      color: 7d5c65;
-      background-color: #c7bad6,
+      margin-top: 50px;
     }
 
     .intro h1 {
       font-size: 32px;
       font-weight: bold;
-      margin-bottom: 20px;
-    }
-    .intro {
-    text-align: center;
-    margin-top: 100px;
-    font-size: 18px;
     }
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-   
-    .contact-info {
+    .intro p {
+      font-size: 18px;
       margin-top: 20px;
-      line-height: 1.6;
     }
 
-    .contact-info p {
+    .columns {
+      display: flex;
+      justify-content: space-between;
+      margin: 50px;
+    }
+
+    .left-column {
+      width: 60%;
+    }
+
+    .right-column {
+      width: 35%;
+    }
+
+    .right-column h2 {
+      font-weight: bold;
+    }
+
+    .instagram-feed {
       margin-bottom: 10px;
     }
-    .contact-info a {
-      font-family: "Poppins", sans-serif !important;
 
+    .band-website {
+      margin-top: 20px;
     }
-    .contact-info a {
-      color: #065fd4;
-      text-decoration: none;
+    details > summary {
+    cursor: pointer;
+    padding: 10px;
+}
+
+details > summary h2 {
+    font-size: 18px; /* Adjust size as needed */
+    color: #333; /* Title color */
+    margin-bottom: 5px;
+}
+
+details > summary p {
+    font-size: 14px; /* Adjust size as needed */
+    color: #666; /* Subtitle color */
+    margin-top: 0;
+}
+
+details > summary::-webkit-details-marker {
+    display: none;
+}
+
+details[open] {
+    border: none;
+}
+
+.dropdown div, .dropdown ul {
+    padding: 10px;
+    margin: 5px 0;
+}
+
+
+.form-container {
+      max-width: 600px; /* Adjust based on preference */
+  margin: 100px auto 20px; /* Increased top margin to 100px */
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background for the form */
+  border-radius: 8px; /* Optional: rounds corners of the form container */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
     }
 
-    .contact-info a:hover {
-      text-decoration: underline;
+    /* Form elements */
+    form {
+      display: flex;
+      flex-direction: column;
     }
+
+    label {
+      margin-bottom: 5px; /* Space between label and input */
+      font-weight: bold; /* Makes labels stand out */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      margin-bottom: 20px; /* Space between each form field */
+      padding: 10px; /* Makes form fields taller and easier to click */
+      border: 1px solid #ddd; /* Subtle border for inputs */
+      border-radius: 4px; /* Rounded corners for inputs */
+    }
+
+    input[type="submit"] {
+      background-color: #007bff; /* Bootstrap primary color */
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0056b3; /* Darken button on hover */
+    }
+
   </style>
 </head>
 <body>
@@ -86,16 +154,20 @@
     <a href="https://virbatra.github.io/Contact.html">Contact</a>
     <a href="https://studio89band.github.io/">Studio89Band Website</a>
   </div>
-  
-  <div class="intro">
-    <h1>Here is my Contact Information</h1>
-    
-    <div class="contact-info">
-      <p>Phone: +1 315 880 ****</p>
-      <p>WhatsApp: +65 9459 ****</p>
-      <p>Email: vsbatra@g.syr.edu</p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/virbatra">virbatra</a></p>
-    </div>
-  </div>        
+
+  <!DOCTYPE html>
+
+  <div class="form-container"> 
+    <h2>Please complete this form, and I'll respond ASAP. </h2>
+    <form action="https://formspree.io/f/mjvnvyjo" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message"></textarea>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
 </body>
 </html>
