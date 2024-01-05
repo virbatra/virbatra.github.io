@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" type="text/css" href="styles.css">
   <title>Vir Batra</title>
   <style>
     body {
@@ -99,6 +100,24 @@ details[open] {
     padding: 10px;
     margin: 5px 0;
 }
+
+.custom-btn {
+  padding: 5px 5px;
+  background-color: whitesmoke; /* White background */
+  color: black; /* Black text */
+  border: .5px grey; /* Black border */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* No underline */
+  font-size: 18px; /* Set a font-size */
+  transition: all 0.3s; /* Smooth transition for all properties */
+}
+
+.custom-btn:hover {
+  background-color: #f8f8f8; /* Slightly grey background on hover */
+  box-shadow: 2px 2px 5px 0 rgba(0,0,0,0.25); /* Slightly smaller shadow on hover */
+}
+
+
   </style>
 </head>
 <body>
@@ -108,17 +127,20 @@ details[open] {
     <a href="https://virbatra.github.io/Services.html">Services</a>
     <a href="https://virbatra.github.io/Testimonials.html">Testimonials</a>
     <a href="https://virbatra.github.io/Contact.html">Contact</a>
-    <a href="https://studio89band.github.io/">Studio89Band Website</a>
+    <a href="https://studio89band.github.io/" target="_blank">Studio89Band Website</a>
   </div>
 
 
   <!DOCTYPE html>
 <html>
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <title>Vir Batra's Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Lato', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
@@ -166,29 +188,42 @@ details[open] {
 <body>
      <header>
         <h1>Vir Batra's Portfolio</h1>
-        <p>Interactive Portfolio (work in progress) Scroll Down For Resume</p>
+        <p>Interactive Portfolio | Scroll Down For Resume</p>
     </header>
 
 <!DOCTYPE html>
 <html>
 
 <body> 
-    <section id="education">
-        <h2>Education</h2>
-        <p>Bachelor of Science in Recording and Entertainment Industries - Syracuse University</p>
-        <p>Minor in Spanish </p>
-        <P>Renée Crown University Honors program </P>
+    <section id="education"
+    class="dropdown">
+    <details>
+        <summary>
+        <h1>Education</h1>
+        <h2>Syracuse University | Bandier Program | Spanish Minor | University Honors Program</h2>
+     </summary>
+     <div>
+        <h3>Major: Bachelor of Science in Recording and Entertainment Industries (Bandier Program)</h3>
+        <p>The Bandier Program is a specialized music business course, combining practical knowledge and hands-on experience in the music, media, marketing, and entrepreneurship sectors. It is ranked among the top programs in its field by Billboard magazine, it was initially funded by Sony Chairman Martin Bandier. </p>
+        <h3>Minor: Spanish </h3>
+        <p>I began learning Spanish in middle school and continued my studies through university, including a semester abroad in Spain in the fall of 2023.</p>
+        <h3>Renée Crown University Honors program </h3>
+        <p>The Renée Crown University Honors Program at Syracuse University provides a comprehensive education emphasizing scholarships, awards, fellowships, and professional recognition. The program aims to develop depth, collaborative capacity, and civic engagement among students.
+        <h3>Current GPA: 3.926 </h3>
+        <h3>UWCSEA Alumni</h3>
+        <p>I recieved my IB diploma at United World College of South East Asia, part of the UWC community. 
     </section>
 
         <section class="dropdown">
     <details>
         <summary>
             <h2>Professional Experience</h2>
-            <p>Hands-on experience</p>
+            <p>Hands-on experience | Audio | Live | Events</p>
         </summary>
         <div>
-            <h3>Founder and General Manager of Oz. (Underground Nightclub in Syracuse)</h3>
-            <p>Created a space for Drum and Bass music. Built a DJ booth and setup the sound and electrical equipment. Responsible for Logistics during and leading up to the events.</p>
+            <h3>Founder and General Manager of <a href="https://www.instagram.com/oz_cuse/" class="custom-btn" target="_blank">Oz (Underground Nightclub in Syracuse)</a></h3>
+            <p>Created a space for Electronic/DnB/House Music. Built a DJ booth and setup the sound and electrical equipment.</p>
+            <p>I run logistics during and leading up to the events.</p>
             <h3>Sound Engineer</h3>
             <p>Part-time sound engineer in the Newhouse Studio</p>
             <p>Freelance Sound engineering for events in Syracuse, as well as Oz.</p>
@@ -204,12 +239,12 @@ details[open] {
             <p>Expanding understanding and impact in the music industry.</p>
         </summary>
         <div>
-            <h3>Venice Music: Partner Success Intern</h3>
-            <p>Executed tasks from research to data analysis, conducted A&R work, and explored key aspects of the music industry.</p>
-            <h3>Upforlessons Singapore: Social Media Intern</h3>
-            <p>Launched Social media presence for the company and helped create an image online by creating and posting content regularly.</p>
-            <h3>Subcat Studios Syracuse: Audio Intern</h3>
-            <p>Assisted in recording sessions and took part in engineering and admin work.</p>
+            <h3><a href="https://www.venicemusic.co/" class="custom-btn" target="_blank">Venice Music</a> Partner Success Intern</h3>
+            <p>I interned for Venice Music in Spring 2023 where I executed tasks from research to data analysis, conducted A&R work, and explored key aspects of the music industry. I worked 12 hours a week, assisting Janice Wang, amongst others, and learned a lot about the independent distribution business.</p>
+            <h3><a href="https://www.upforlessons.com/" class="custom-btn" target="_blank">Upforlessons</a> Social Media Intern</h3>
+            <p>I launched the social media for Upforlessons when they started out. I posted content on Instagram and TikTok and helped create an online presence for Ernesto.</p>
+            <h3><a href="https://subcat.net/" class="custom-btn" target="_blank">SubCat Studios</a> Audio Intern</h3>
+            <p>During the Spring 2022 semester, I interned at Subcat Studios in Syracuse, where I learned a lot about how a professional studio is run, and the duties of a sound engineers, creating a foundation for me, following which I began working part-time as a sound engineer.</p>
         </div>
     </details>
 </section>
@@ -219,13 +254,13 @@ details[open] {
     <details>
         <summary>
             <h2>Artistry</h2>
-            <p>Songwriter, Singer, and Guitarist</p>
+            <p>Songwriter | Singer | Guitarist</p>
         </summary>
         <div>
-            <h3>Studio89</h3>
+            <h3><a href="https://www.instagram.com/studio89band/" class="custom-btn" target="_blank">Studio89</a></h3>
             <h4>Songwriter Lead Singer and Guitarist.</h4>
             <p>Written and Released 3 songs and played over 40 shows in the Syracuse Area and outside.</p>
-            <h3>Picture Us Tiny</h3>
+            <h3><a href="https://www.instagram.com/pictureustiny/" class="custom-btn" target="_blank">Picture Us Tiny</a></h3> 
             <h4>Lead Guitarist. </h4>
             <p>Played numerous shows including in NYC. Co-wrote "Christmas On My Own" (1,000,000 Streams on Spotify).</p>
         </div>
@@ -247,8 +282,7 @@ details[open] {
             <p>Adobe Suite (Illustrator, XD, Premiere Pro, InDesign, Aero)</p>
             <p>Social Media Platforms (Instagram, TikTok)</p>
             <p>Google Suite</p>
-            <p>Basic HTML, I coded this website :)</p>
-        </ul>
+            <p>HTML</p>
     </details>
 </section>
 
