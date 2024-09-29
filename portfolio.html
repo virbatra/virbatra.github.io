@@ -1,55 +1,149 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Vir Music Works</title>
-    <style>
-      /* add some margin for readability */
-      h2, p {
-        margin-bottom: 1rem;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Vir Batra: Music Works</h1>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <title>Vir Music Works</title>
+  <style>
+    body {
+      font-family: 'Lato', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
 
-    <h2> In progress </h2>
-    <p>https://soundcloud.com/user-422852576/rat-race-march-19/s-asw1ZDVUNqY?si=2d2a61d6aad9477cbc0e9310f3b1de7b&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing</p>
-    
+    .navbar {
+      background-color: #f2f2f2;
+      overflow: hidden;
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-weight: bold;
+      color: black;
+    }
+
+    .navbar a:hover {
+      background-color: #ddd;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 60px; /* Adjust for fixed navbar */
+    }
+
+    section {
+      margin-left: 50px;
+      margin-right: 50px;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px; /* Spacing between sections */
+    }
+
+    h2 {
+      color: #444;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 18px;
+      color: #666;
+    }
+
+    .custom-btn {
+      padding: 5px 10px;
+      background-color: whitesmoke;
+      color: black;
+      border: .5px grey;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 18px;
+      transition: all 0.3s;
+    }
+
+    .custom-btn:hover {
+      background-color: #f8f8f8;
+      box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    iframe {
+      display: block;
+      margin: 20px 0;
+      width: 100%;
+      max-width: 560px;
+      height: 315px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <a href="https://virbatra.xyz/">Home/About Me</a>
+    <a href="https://virbatra.github.io/Portfolio.html">Portfolio</a>
+    <a href="https://virbatra.github.io/Services.html">Services</a>
+    <a href="https://virbatra.github.io/Testimonials.html">Testimonials</a>
+    <a href="https://virbatra.github.io/Contact.html">Contact</a>
+    <a href="https://studio89band.github.io/" target="_blank">Studio89Band Website</a>
+  </div>
+
+  <h1>Vir Batra: Music Works</h1>
+
+  <section>
+    <h2>In Progress</h2>
+    <p>
+      <a href="https://soundcloud.com/user-422852576/rat-race-march-19/s-asw1ZDVUNqY?si=2d2a61d6aad9477cbc0e9310f3b1de7b&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" class="custom-btn" target="_blank">
+        Listen on SoundCloud
+      </a>
+    </p>
+  </section>
+
+  <section>
     <h2>Studio89 "On Your Own" Music Video</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/_H46qPd0fZo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <p>
-      Written, mixed, and produced by Me.<br>
-      I also played everything but drums and sang lead vocals.
-    </p>
+    <iframe src="https://www.youtube.com/embed/_H46qPd0fZo" title="YouTube video player"></iframe>
+    <p>Written, mixed, and produced by Me.<br>I also played everything but drums and sang lead vocals.</p>
+  </section>
 
+  <section>
     <h2>Studio89 "Casual Conversations for the Sake of Conversing" Music Video</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/wHbO5fio4Jg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <p>
-      Written, mixed, and produced by Me.<br>
-      I also played guitar and sang lead vocals.
-    </p>
+    <iframe src="https://www.youtube.com/embed/wHbO5fio4Jg" title="YouTube video player"></iframe>
+    <p>Written, mixed, and produced by Me.<br>I also played guitar and sang lead vocals.</p>
+  </section>
 
+  <section>
     <h2>Studio89 "Jesse's Song" Music Video</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/GH2czwgN8qY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <p>
-      Written by Jesse Herman and Me.<br>
-      I also played guitar and sang lead vocals.
-    </p>
+    <iframe src="https://www.youtube.com/embed/GH2czwgN8qY" title="YouTube video player"></iframe>
+    <p>Written by Jesse Herman and Me.<br>I also played guitar and sang lead vocals.</p>
+  </section>
 
+  <section>
     <h2>Picture Us Tiny "Christmas On My Own" Music Video</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/vPOpQn7ze_4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <p>
-      Helped Co-Write, and played lead guitar.
-    </p>
+    <iframe src="https://www.youtube.com/embed/vPOpQn7ze_4" title="YouTube video player"></iframe>
+    <p>Helped Co-Write, and played lead guitar.</p>
+  </section>
 
-    <h2>Picture Us Tiny "Jackson, You Are dying" Music Video</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Gmvzew5V4Ww?si=FjkjY64HC69VDp4K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <p>
-      Played lead guitar and helped produce.
-    </p>
+  <section>
+    <h2>Picture Us Tiny "Jackson, You Are Dying" Music Video</h2>
+    <iframe src="https://www.youtube.com/embed/Gmvzew5V4Ww?si=FjkjY64HC69VDp4K" title="YouTube video player"></iframe>
+    <p>Played lead guitar and helped produce.</p>
+  </section>
 
+  <section>
     <h2>Picture Us Tiny "Forever & Always (Tiny's Version)" Music Video</h2>
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/yQVQdCSilZk?si=uVG4I4btdFQIqz5d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <p>
-      Played Lead guitar and helped produce.
-    </
+    <iframe src="https://www.youtube.com/embed/yQVQdCSilZk?si=uVG4I4btdFQIqz5d" title="YouTube video player"></iframe>
+    <p>Played Lead guitar and helped produce.</p>
+  </section>
+
+</body>
+</html>
