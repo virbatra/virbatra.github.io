@@ -44,58 +44,56 @@
       margin-top: 70px; /* Adjust for fixed navbar */
     }
 
-    .grid-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
-      margin: 50px;
+    .dropdown-container {
+      max-width: 800px;
+      margin: 50px auto;
     }
 
-    .grid-item {
+    .dropdown {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 10px;
       background-color: white;
-      padding: 20px;
-      border-radius: 10px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .dropdown-title {
+      padding: 15px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #444;
+      cursor: pointer;
       display: flex;
-      flex-direction: column;
+      justify-content: space-between;
       align-items: center;
     }
 
-    .grid-item h2 {
-      font-size: 20px;
-      color: #444;
-      text-align: center;
+    .dropdown-title:hover {
+      background-color: #f0f0f0;
     }
 
-    .grid-item p {
+    .dropdown-content {
+      display: none;
+      padding: 15px;
       font-size: 16px;
       color: #666;
-      text-align: center;
     }
 
-    .grid-item a {
-      text-decoration: none;
-      color: #3897f0;
-      font-weight: bold;
-      margin-top: 10px;
-    }
-
-    .grid-item a:hover {
-      text-decoration: underline;
-    }
-
-    .grid-item iframe {
-      border: none;
+    .dropdown-content iframe {
       width: 100%;
-      height: 180px;
-      border-radius: 10px;
-      margin-bottom: 15px;
+      height: 200px;
+      border: none;
+      margin: 10px 0;
     }
 
-    @media (max-width: 600px) {
-      .grid-container {
-        grid-template-columns: 1fr;
-      }
+    .dropdown-content a {
+      color: #3897f0;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .dropdown-content a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -103,32 +101,69 @@
 
   <h1>Press & Publications</h1>
 
-  <div class="grid-container">
-    <div class="grid-item">
-      <iframe src="https://www.thenewshouse.com/campus-news/rockn-roll-renaissance-man-vir-batra/" title="Rock’n Roll Renaissance Man: Vir Batra"></iframe>
-      <h2>Rock’n Roll Renaissance Man: Vir Batra</h2>
-      <p>A feature article on The News House showcasing Vir Batra's dynamic career and contributions.</p>
-      <a href="https://www.thenewshouse.com/campus-news/rockn-roll-renaissance-man-vir-batra/" target="_blank">Read the Article</a>
+  <div class="dropdown-container">
+    <!-- Article 1 -->
+    <div class="dropdown">
+      <div class="dropdown-title" onclick="toggleDropdown(this)">
+        Rock’n Roll Renaissance Man: Vir Batra
+        <span>&#9660;</span>
+      </div>
+      <div class="dropdown-content">
+        <p>A feature article on The News House showcasing Vir Batra's dynamic career and contributions.</p>
+        <iframe src="https://www.thenewshouse.com/campus-news/rockn-roll-renaissance-man-vir-batra/" title="Rock’n Roll Renaissance Man: Vir Batra"></iframe>
+        <a href="https://www.thenewshouse.com/campus-news/rockn-roll-renaissance-man-vir-batra/" target="_blank">Read the Article</a>
+      </div>
     </div>
-    <div class="grid-item">
-      <iframe src="https://dailyorange.com/2023/04/studio89-finds-yellow-brick-road-with-new-oz-concert-venue/" title="Studio89 Finds Yellow Brick Road"></iframe>
-      <h2>Studio89 Finds Yellow Brick Road</h2>
-      <p>The Daily Orange covers Studio89's journey and its new Oz concert venue.</p>
-      <a href="https://dailyorange.com/2023/04/studio89-finds-yellow-brick-road-with-new-oz-concert-venue/" target="_blank">Read the Article</a>
+
+    <!-- Article 2 -->
+    <div class="dropdown">
+      <div class="dropdown-title" onclick="toggleDropdown(this)">
+        Studio89 Finds Yellow Brick Road
+        <span>&#9660;</span>
+      </div>
+      <div class="dropdown-content">
+        <p>The Daily Orange covers Studio89's journey and its new Oz concert venue.</p>
+        <iframe src="https://dailyorange.com/2023/04/studio89-finds-yellow-brick-road-with-new-oz-concert-venue/" title="Studio89 Finds Yellow Brick Road"></iframe>
+        <a href="https://dailyorange.com/2023/04/studio89-finds-yellow-brick-road-with-new-oz-concert-venue/" target="_blank">Read the Article</a>
+      </div>
     </div>
-    <div class="grid-item">
-      <iframe src="https://dailyorange.com/2022/05/studio89-brings-high-energy-showmanship-su-house-scene/" title="Studio89 Brings High-Energy Showmanship"></iframe>
-      <h2>Studio89 Brings High-Energy Showmanship</h2>
-      <p>An in-depth look at Studio89's energetic performances and impact on the SU house scene.</p>
-      <a href="https://dailyorange.com/2022/05/studio89-brings-high-energy-showmanship-su-house-scene/" target="_blank">Read the Article</a>
+
+    <!-- Article 3 -->
+    <div class="dropdown">
+      <div class="dropdown-title" onclick="toggleDropdown(this)">
+        Studio89 Brings High-Energy Showmanship
+        <span>&#9660;</span>
+      </div>
+      <div class="dropdown-content">
+        <p>An in-depth look at Studio89's energetic performances and impact on the SU house scene.</p>
+        <iframe src="https://dailyorange.com/2022/05/studio89-brings-high-energy-showmanship-su-house-scene/" title="Studio89 Brings High-Energy Showmanship"></iframe>
+        <a href="https://dailyorange.com/2022/05/studio89-brings-high-energy-showmanship-su-house-scene/" target="_blank">Read the Article</a>
+      </div>
     </div>
-    <div class="grid-item">
-      <iframe src="https://writingaboutmusic.hcommons.org/rhodes-corduroy-at-ottothon-vir-batra/" title="Rhodes Corduroy at Ottothon"></iframe>
-      <h2>Rhodes Corduroy at Ottothon</h2>
-      <p>Vir Batra's own article reflecting on the Rhodes Corduroy performance at Ottothon.</p>
-      <a href="https://writingaboutmusic.hcommons.org/rhodes-corduroy-at-ottothon-vir-batra/" target="_blank">Read the Article</a>
+
+    <!-- Article 4 -->
+    <div class="dropdown">
+      <div class="dropdown-title" onclick="toggleDropdown(this)">
+        Rhodes Corduroy at Ottothon
+        <span>&#9660;</span>
+      </div>
+      <div class="dropdown-content">
+        <p>Vir Batra's own article reflecting on the Rhodes Corduroy performance at Ottothon.</p>
+        <iframe src="https://writingaboutmusic.hcommons.org/rhodes-corduroy-at-ottothon-vir-batra/" title="Rhodes Corduroy at Ottothon"></iframe>
+        <a href="https://writingaboutmusic.hcommons.org/rhodes-corduroy-at-ottothon-vir-batra/" target="_blank">Read the Article</a>
+      </div>
     </div>
   </div>
 
+  <script>
+    function toggleDropdown(element) {
+      const content = element.nextElementSibling;
+      const isVisible = content.style.display === 'block';
+      // Close all other dropdowns
+      document.querySelectorAll('.dropdown-content').forEach(dropdown => dropdown.style.display = 'none');
+      // Toggle the clicked one
+      content.style.display = isVisible ? 'none' : 'block';
+    }
+  </script>
 </body>
 </html>
